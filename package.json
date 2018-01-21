@@ -5,6 +5,7 @@
   "engines": {
     "node": "8.9.1"
     },
+  "root":"build/",
   "dependencies": {
     "axios": "^0.17.0",
     "bluebird": "^3.5.1",
