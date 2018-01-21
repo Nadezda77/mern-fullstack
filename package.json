@@ -23,8 +23,7 @@
     "start": "node ./bin/www",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "postinstall": "webpack-env.production-config./config/webpack.js-progress"
+    "eject": "react-scripts eject"
     
   },
   "devDependencies": {
