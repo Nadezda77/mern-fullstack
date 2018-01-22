@@ -5,14 +5,6 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-
-const db = mongoose.connection;
-
- db.on('error', console.error);
- db.once('open', function (res) {
-     dummyData();  //put this here instead of inside mongoose.connect
- });
-
 mongoose.connect('mongodb://nadap:123456.A@ds133017.mlab.com:33017/nada1', { useMongoClient: true, promiseLibrary: require('bluebird') })
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
